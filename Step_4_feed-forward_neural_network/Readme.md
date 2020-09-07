@@ -1,4 +1,12 @@
+# Step 4:-
 
+Write a python script using keras to train a fully-connected feed-forward neural network classifier to classify documents in the Amazon corpus into positive and negative classes. Your network must consist of:
+1. Input layer of the word2vec embeddings you prepared in Step 3.
+2. One hidden layer. For the hidden layer, try the following activation functions: ReLU, sigmoid and tanh.
+3. Final layer with softmax activation function.
+4. Use cross-entropy as the loss function.
+5. Add L2-norm regularization.
+6. Add dropout. Try a few different dropout rates.
 
 # ACCURACIES:-
 
@@ -29,12 +37,10 @@ It is also evident from the table that for all activation function without l2 an
 
 # EXECUTION DETAILS:-
 
-I have only placed the .py files in GitHub. The MSCI_Assignement_4.py file contains all the execution and the main.py is the file to be executed which has the driver of MSCI_Assignement_4.py. Kindly execute main.py. The main.py expects one argument to be passed from command line which is the path to the folder which has the split made in assignmnet 1. For eg:- "a1/data" and I have used os.path .join to combine the path with the file name. For w2v model I have hard coded the path like "a3/data/w2v.model". 
-inference. py accepts two argument path to the text file and model
+I have only placed the .py files in GitHub. The MSCI_Assignement_4.py file contains all the execution and the main.py is the file to be executed which has the driver of MSCI_Assignement_4.py.
+`inference.py` script classifies a given sentence into a positive/negative class. It should accept the two command-line arguments described below.
+i. arg1: Path to a .txt file, which contains some sentences compiled for evaluation. There will be one sentence per line.
+ii. arg2: Type of classifier to use. Its value will be one of the following – relu, sigmoid, tanh. Example: relu indicates that the neural network with ReLU
+activation should be selected for classifying sentences in the aforementioned .txt file.
 
-
-# STUDENT DETAILS:-
-Name :- Amith Nandakumar
-Student id:- 20859891
-email:- a4nandak@uwaterloo.ca
 
