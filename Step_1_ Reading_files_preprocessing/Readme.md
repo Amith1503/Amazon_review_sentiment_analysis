@@ -1,4 +1,4 @@
-Step 1:-
+# Step 1:-
 
 Write a python script to perform the following data preparation activities:
 1. Tokenize the corpus
